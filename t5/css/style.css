@@ -56,9 +56,10 @@ html,body,h1,h2,h3,p,ol,ul,li,div{
 }
 
 
-#main1 #rw {
-	margin: 100px 36%;
-
+#rww {
+	text-align: center;
+	width:36%;
+	margin:60px auto;
 }
 
 
@@ -68,18 +69,18 @@ html,body,h1,h2,h3,p,ol,ul,li,div{
 	width: 20%;
 	margin: 0 auto;
 	padding: 20px 0;
-
+	position: relative;
 }
 
 #RedNotice::after {
 	content:"";
-	width: 0;
-	height: 0;
 	border-style: solid;
 	border-width: 30px 30px 0 30px;
 	border-color: #FA4489 transparent transparent transparent;
 	z-index: 1;
-	position: relative;
+	position: absolute;
+	left:50%;
+	margin-left: -30px;
 	top: 60px;
 }
 
@@ -137,12 +138,27 @@ html,body,h1,h2,h3,p,ol,ul,li,div{
 /*--main3--*/
 
 #wrapper {
-	width: 1200px;
+	padding: 0 100px;
+	text-align: center;
 	margin: 0 auto;
+
+
+}
+
+#wrapper img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+
 }
 
 .L1 {
 	float: left;
+}
+
+.L1 img, .L2 img {
+
 }
 .L2 {
 	float: left;
@@ -157,22 +173,35 @@ html,body,h1,h2,h3,p,ol,ul,li,div{
 	text-align: center;
 }
 
-#bun {
-	width: 200px;
-	margin: 20px auto;
-	text-align: center;
-
-	
-
+.clear {
+	clear: both;
 }
-#bun a {
+
+#bunc {
+	margin: 40px 0 0 0;
+}
+#bunc a {
+	
+	width: 15%;
+	text-align: center;
+	
 	color: white;
 	text-decoration: none;
-	padding: 20px 20px;
+	padding: 15px 20px;
 	background-color: black;
 }
 
-#bun a:hover {
+#lastwrapper a{
+	
+	background-color: white;
+	margin:0 auto;
+	padding: 20px 50px;
+	text-decoration: none;
+	color: black;
+	word-spacing: 3px;
+}
+
+#bunc a:hover {
 	background-color: #EF4DDA;
 }
 
@@ -219,14 +248,10 @@ html,body,h1,h2,h3,p,ol,ul,li,div{
 	margin: 0 20px;
 }
 
-#lastwrapper a{
-	background-color: white;
-	margin:0 auto;
-	padding: 20px 50px;
-	text-decoration: none;
-	color: black;
-	word-spacing: 3px;
+#bun {
+	text-align: center;
 }
+
 
 /*--copyright--*/
 
@@ -236,4 +261,31 @@ html,body,h1,h2,h3,p,ol,ul,li,div{
 	padding: 40px 0;
 }
 
+
+@media only screen and (max-width: 700px) {
+	#Ltxt {
+	
+	color: white;
+	float: left;
+	width: 50%;
+	letter-spacing: 3px;
+	
+}
+	#Rtxt {
+	padding:200px 0;
+	margin-left: 55%;
+	color: white;
+	width: 50%;
+	letter-spacing: 3px;
+	
+}
+	#lastwrapper {
+	width: 90%;
+	}
+	#rww {
+		text-align: center;
+		width:60%;
+		margin:60px auto;
+	}
+}
 
